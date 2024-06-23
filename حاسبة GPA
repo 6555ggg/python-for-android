@@ -1,0 +1,74 @@
+try:
+    def computegrade():
+        Aa1 = input ("ادخل درجات المادة ")
+        Bb1 = input ("ادخل عدد النقاط المعتمدة")
+        Aa2= input ("ادخل درجات المادة ")
+        Bb2= input ("ادخل عدد النقاط المعتمدة")
+        Aa3= input ("ادخل درجات المادة ")
+        Bb3= input ("ادخل عدد النقاط المعتمدة")
+        Aa4=input ("ادخل درجات المادة ")
+        Bb4=input ("ادخل عدد النقاط المعتمدة")
+        Aa5= input ("ادخل درجات المادة ")
+        Bb5 =input ("ادخل عدد النقاط المعتمدة")
+        Aa6 = input ("ادخل درجات المادة ")
+        Bb6=input ("ادخل عدد النقاط المعتمدة")
+        Aa7= input ("ادخل درجات المادة ")
+        Bb7 =input ("ادخل عدد النقاط المعتمدة")
+        Aa8 = input ("ادخل درجات المادة ")
+        Bb8=input ("ادخل عدد النقاط المعتمدة")
+        A1 =  float(Aa1)
+        B1 = float(Bb1)
+        A2 = float (Aa2)
+        B2 = float(Bb2)
+        A3 = float(Aa3)
+        B3 = float (Bb3)
+        A4 = float (Aa4)
+        B4 = float (Bb4)
+        A5 = float (Aa5)
+        B5 = float (Bb5)
+        A6 = float (Aa6)
+        B6 = float (Bb6)
+        A7 = float (Aa7)
+        B7 = float (Bb7)
+        A8 = float (Aa8)
+        B8= float (Bb8)
+        rrt= (A1*B1) + (A2*B2) + (A3* B3)
+        vtt= rrt + (A4*B4) + (A5*B5)
+        ytt= vtt + (A6*B6)+ (A7*B7)+(A8*B8)
+        Hh= (B1+ B2 + B3 + B4+ B5 + B6 )
+        hhh= Hh +( B7 + B8)
+        prr= ytt/hhh
+        print (prr)
+        if prr > 100:
+            print (" عذراً المعطيات التي أدخلتها تتخطى المطلوب الرجاء المحاولة مرة أخرى بأرقام من 0 إلى 100")
+        elif prr < 0 :
+            print ("عذراً المعطيات التي أدخلتها أدنى من المطلوب الرجاء المحاولة مرة أخرى بأرقام من 0 إلى 100")
+        elif prr > 95 or prr == 95 and prr ==100 or     prr<100  :
+            print ("Your academic grade is: A+  ")
+        elif prr > 90 or prr ==90 and prr < 95 :
+            print ("Your academic grade is: A ")
+        elif prr> 85 or prr ==85 and prr < 90:
+            print ("Your academic grade is: A–")
+        elif prr > 80 or prr ==80 and prr<85 :
+            print ("Your academic grade is: B+ ")
+        elif prr > 75  or prr ==75 and prr < 80 :
+            print ("Your academic grade is: B ")
+        elif prr > 70 or prr== 70 and Prr <75:
+            print ("Your academic grade is: C+ ")
+        elif prr >  65 or prr ==65 and prr < 70 :
+            print ("Your academic grade is: C ") 
+        elif prr > 60 or prr == 60 and prr< 65:
+            print ("Your academic grade is: D+ ")
+        elif prr > 55 or prr ==55 and prr < 60 : 
+            print ("Your academic grade is: D ")
+        elif prr > 50 or prr == 50 and prr < 55 :
+            print("Your academic grade is: D–")
+        elif prr < 50 :
+            print ("Your academic grade is: F ")
+        GPA = prr * 4 /100
+        print (" Your GPA is " + str(GPA))
+        return computegrade 
+    computegrade()
+except :
+         print ("القيمة التي  أدخلتها غير صحيحة")
+         print ("الرجاء إدخال رقم من 0 إلى 100")
